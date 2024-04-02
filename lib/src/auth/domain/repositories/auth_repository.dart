@@ -1,10 +1,11 @@
+import '../../../../core/utils/typedef.dart';
 import '../entities/user.dart';
 
 abstract interface class AuthRepository {
-  Future<void> createUser({
+  ResultFutureVoid createUser({
     required String name,
     required String avatar,
   });
 
-  Future<List<User>> fetchUsers();
+  ResultFuture<List<User>> getUsers();
 }

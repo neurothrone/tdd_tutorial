@@ -8,6 +8,13 @@ class User extends Equatable {
     required this.createdAt,
   });
 
+  factory User.empty() => const User(
+        id: 1,
+        name: "",
+        avatar: "",
+        createdAt: "",
+      );
+
   final int id;
   final String name;
   final String avatar;
